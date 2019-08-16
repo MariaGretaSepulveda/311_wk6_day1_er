@@ -68,7 +68,7 @@ We are going to use a sample schema given to use by MySQL.
 
 ##### ER Diagram Diagnosis 
 
-1. What is the relationship between the "actor" and "film_actor" tables? It would be actor_id SMALLINT ..The Relationship is that one actor can be in many films. The film_actor table is used to support a many-to-many relationship between films and actors. For each actor in a given film, there will be one row in the film_actor table listing the actor and film.
+1. What is the relationship between the "actor" and "film_actor" tables? It appears that the relationship between the actor and film actor would be actor_id SMALLINT(5) ..The Relationship is that one actor can be in many films. The film_actor table is used to support a many-to-many relationship between films and actors. For each actor in a given film, there will be one row in the film_actor table listing the actor and film.
 The film_actor table refers to the film and actor tables using foreign keys.
 
 2. What does the blue diamond next to the "last_update" column on the "inventory" table represent? What the blue diamond represents is that it is a blue lined filled diamond so it's a NOT NULL simple attribute.
